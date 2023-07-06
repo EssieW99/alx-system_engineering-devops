@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -typed -exec chmond {} +
+chmod -R+X
