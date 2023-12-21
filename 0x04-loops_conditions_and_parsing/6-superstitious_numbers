@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# this scripts loops through 1-20 and displays various statements after certain loop iterations
+i=1
+while ((i <= 20))
+do
+	case $i in
+	4)
+		echo -e "$i\nbad luck from China"
+		;;
+	9)
+		echo -e "$i\nbad luck from Japan"
+		;;
+	17)
+		echo -e "$i\nbad luck from Italy"
+		;;
+	*)
+		echo "$i"
+		;;
+	
+	esac
+
+	((i++))
+done
+
