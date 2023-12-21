@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# this script displays "hi" after the 9th iteration on Best School
+i=0
+while ((i < 10))
+do
+	if ((i == 8))
+	then
+		echo -e "Best School\nHi"
+	else
+		echo "Best School"
+	fi
+
+	((i++))
+done
