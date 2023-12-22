@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# this script displays the username, userid and home directory path of the user of the file "/etc/passwd"
+file="/etc/passwd"
+
+if [ -f "$file" ]; then
+	while IFS=: read -r username _ uid _ _ home _; do
+		echo "$username:$uid:$home"
+	done < "$file"
+
+else
+	echo "Error: $file file not found"
+fi
