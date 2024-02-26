@@ -2,4 +2,4 @@
 # connect to your server with ssh, a private key and user name
 # -i flag is used to specify the identity file(private key)
 
-ssh -i ~/.ssh/school ubuntu@54.90.1.10
+ssh -i ~/.ssh/school ubuntu@100.25.110.141
