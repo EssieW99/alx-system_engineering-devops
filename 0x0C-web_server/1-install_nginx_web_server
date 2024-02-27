@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# a script that configures a new Ubuntu machine with specific nginx requirements
+
+sudo apt update
+sudo apt-get install -y nginx
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
+sudo service nginx restart
