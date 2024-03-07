@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# configures a new nginx server with a custom HTTP header
+
+sudo apt update
+sudo apt-get install -y nginx
+# define the nginx config file
+FILE="/etc/nginx/sites-available/default"
+# insert the custom header file at line 22 and overwrite the file
+sudo sed -i '22i \\tadd_header X-Served-By $HOSTNAME;' "$FILE"
+# restart nginx to apply changes made
+sudo service nginx restart
