@@ -11,7 +11,7 @@ frontend http_front
         default_backend server_group
 backend server_group
         balance roundrobin
-        server 229663-web-01 100.25.110.141:80 check
-        server 229663-web-02 100.26.172.140:80 check
+        server 229663-web-01 34.203.29.35:80 check
+        server 229663-web-02 100.25.3.77:80 check
 " >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
