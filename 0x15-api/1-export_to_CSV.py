@@ -16,7 +16,7 @@ if __name__ == "__main__":
     todos_specs = {"userId": user_id}
 
     user_info = requests.get(users_endpoint, params=user_specs).json()
-    user_name = user_info[0].get('name')
+    user_name = user_info[0].get('username')
 
     todos_info = requests.get(todos_endpoint, params=todos_specs).json()
 
