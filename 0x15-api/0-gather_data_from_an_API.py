@@ -30,4 +30,4 @@ if __name__ == "__main__":
     print("Employee {} is done with tasks({}/{}):"
           .format(employee_name, len_comp_tasks, len(todos_info)))
     for title in comp_tasks:
-        print(f"\t{title}")
+        print(f"\t {title}")
